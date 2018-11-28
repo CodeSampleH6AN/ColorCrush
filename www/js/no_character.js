@@ -1,7 +1,20 @@
-
-$('input[type="number"]').keydown(function(e){
-   var ingnore_key_codes = [32,109,188,189,190];
-   if ($.inArray(e.keyCode, ingnore_key_codes) >= 0){
-      e.preventDefault();
-   }
+$('html').bind('keypress', function (e) {
+    if (e.keyCode === 32) {
+        return false;
+    }
+    if (e.keyCode === 45) {
+        return false;
+    }
+    if (e.keyCode === 109) {
+        return false;
+    }
+    if (e.keyCode === 188) {
+        return false;
+    }
+    if (e.keyCode === 189) {
+        return false;
+    }
+    if (e.keyCode === 190) {
+        return false;
+    }
 });
