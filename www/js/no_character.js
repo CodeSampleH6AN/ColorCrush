@@ -1,12 +1,5 @@
-$('html').bind('keypress', function (e) {
-    if (e.charCode == 44) {
-        return false;
-    }
-    if (e.charCode == 45) {
-        return false;
-    }
-    if (e.charCode == 32) {
-        return false;
-    }
-});
+function isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : event.keyCode;
+    return !(charCode > 31 && (charCode < 46 || charCode > 57));
+}
 
