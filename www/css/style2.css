@@ -1,0 +1,119 @@
+.label3 {
+    font: 14px verdana;
+    font-weight: 600;
+    margin-left:4px;
+}
+.label4 {
+    font: 14px verdana;
+    font-weight: 600;
+    margin-left:12px;
+}
+.label5 {
+    font: 14px verdana;
+    font-weight: 600;
+    margin-left:36px;
+}
+.label6 {
+    font: 14px verdana;
+    font-weight: 600;
+    margin-left:12px;
+}
+#colorresult {
+    line-height: 100%;
+    font: normal normal bold 14px verdana;
+}
+#perresult {
+    line-height: 100%;
+    font: normal normal bold 14px verdana;
+}
+#millresult {
+    line-height: 100%;
+    font: normal normal bold 14px verdana;
+}
+/* Modal Window */
+
+.img-modalS {
+    position: relative;
+    top: 8px;
+    left: 6px;
+}
+h2 {
+    font-size: 2em;
+}
+.modalDialogS {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 99999;
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialogS:target {
+    opacity: 1;
+    color: #353535;
+    pointer-events: auto;
+}
+.modalDialogS > div {
+    color: #353535;
+    width: 320px;
+    position: relative;
+    margin: 0 auto;
+    padding: 5px 20px 13px 20px;
+    background: #fed25a;
+}
+.closeS {
+    background: #fed25a;
+    color: #353535;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px #000;
+}
+
+/* Media Queries */
+
+@media screen and (orientation: portrait) {
+    .modalDialogS > div {
+        width: 234px;
+        position: relative;
+        margin: 28% auto;
+        background: #fed25a;
+    }
+  .img-modalS {
+    position: relative;
+    top: 8px;
+    left: 4px;
+}
+.img-modalS-mass {
+    position: relative;
+    top: 8px;
+    left: 10px;
+}
+}
+@media screen and (orientation: landscape) {
+    .modalDialogS > div {
+        position: relative;
+        margin: 10% auto;
+        background: #fed25a;
+    }
+  .img-modalS {
+    position: relative;
+    top: 8px;
+    left: 4px;
+}
+.img-modalS-mass {
+    position: relative;
+    top: 8px;
+    left: 10px;
+}
+}

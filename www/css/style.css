@@ -1,0 +1,165 @@
+
+body {
+    color: #353535;
+    font-family: verdana;
+    background: #fed25a;
+    text-align: center;
+    user-select: none;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a {-webkit-tap-highlight-color: rgba(0,0,0,0);}
+.navbar {
+    overflow: hidden;
+    background-color: #353535;
+    position: absolute;
+    height: 42px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+}
+h1 {
+  margin-left:4px;
+}
+
+.img-main {
+    position: relative;
+    top: 8px;
+    margin-right: 6px;
+    visibility:visible;
+}
+#info {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+.color {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+.crush {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+.label {
+   
+}
+.label1 {
+    font: 14px verdana;
+    font-weight: 600;
+    margin-left:4px;
+}
+.label2 {
+    font: 14px verdana;
+    font-weight: 600;
+    margin-left:36px;
+}
+.input {
+    position: relative;
+    top: 0;
+    padding: 0 5px;
+    font: normal normal bold 12px/24px verdana;
+    color: #353535;
+    text-align: center;
+    text-transform: uppercase;
+    outline: none;
+    background: #fed25a;
+    border:none;
+    border-bottom:1px solid #353535;
+}
+.style {
+    position: relative;
+    top: 0;
+    padding: 0 5px;
+    border: 2px solid #353535;
+    font: normal normal bold 12px/24px verdana;
+    color: #353535;
+    text-align: center;
+    text-transform: uppercase;
+    outline: none;
+    background: #fed25a;
+}
+#resultgr {
+    line-height: 100%;
+    font: normal normal bold 14px verdana;
+}
+/* Modal Window */
+
+.img-modal {
+    position: relative;
+    top: 8px;
+    left: 6px;
+}
+h2 {
+    font-size: 2em;
+}
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 99999;
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity: 1;
+    color: #353535;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    color: #353535;
+    width: 320px;
+    position: relative;
+    margin: 0 auto;
+    padding: 5px 20px 13px 20px;
+    background: #fed25a;
+}
+.close {
+    background: #fed25a;
+    color: #353535;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px #000;
+}
+
+/* Media Queries */
+
+@media screen and (orientation: portrait) {
+    .modalDialog > div {
+        width: 234px;
+        position: relative;
+        margin: 28% auto;
+        background: #fed25a;
+    }
+  .img-modal {
+    position: relative;
+    top: 8px;
+    left: 4px;
+}
+}
+@media screen and (orientation: landscape) {
+    .modalDialog > div {
+        position: relative;
+        margin: 10% auto;
+        background: #fed25a;
+    }
+  .img-modal {
+    position: relative;
+    top: 8px;
+    left: 4px;
+}
+}
