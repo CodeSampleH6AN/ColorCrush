@@ -9,4 +9,3 @@ $('html').bind('keypress', function (e) {
         return false;
     }
 });
-s
