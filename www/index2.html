@@ -37,22 +37,22 @@
             <hr style="height:1px;border-width:0;color:#353535;background-color:#353535;">
             <br>
             <label class="label3" for="mkg">Materijal (kg):</label>
-            <input class="input" id="mkg" maxlength="5" inputmode="numeric" style="width:44px" min="0" />
+            <input class="input" id="mkg" maxlength="5" inputmode="numeric" style="width:44px" min="0" oninput="validity.valid||(value='');"/>
             <br>
             <br>
 
             <label class="label4" for="mvkg">Meljava (kg):</label>
             <input class="input" id="mvkg" maxlength="5" inputmode="numeric" style="width:44px" min="0" max="4950"
-                   onclick="document.getElementById('mper').value = '';" onkeyup="this.value = minmax(this.value, 0, 4950)" />
+                   onclick="document.getElementById('mper').value = '';" onkeyup="this.value = minmax(this.value, 0, 4950)" oninput="validity.valid||(value='');"/>
             <br>
             <br>
             <label class="label5" for="cper">Boja (%):</label>
-            <input class="input"  id="cper" maxlength="5" inputmode="numeric" style="width:44px" min="0" />
+            <input class="input"  id="cper" maxlength="5" inputmode="numeric" style="width:44px" min="0" oninput="validity.valid||(value='');"/>
             <br>
             <br>
             <label class="label6" for="mper">Meljava (%):</label>
             <input class="input"  id="mper" min="0" max="100" maxlength="5" inputmode="numeric" style="width:44px"
-                   onclick="document.getElementById('mvkg').value = '';" onkeyup="this.value = minmax(this.value, 0, 99.99)"/>
+                   onclick="document.getElementById('mvkg').value = '';" onkeyup="this.value = minmax(this.value, 0, 99.99)" oninput="validity.valid||(value='');"/>
             <br>
             <br>
 

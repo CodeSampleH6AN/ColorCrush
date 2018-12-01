@@ -35,12 +35,12 @@ history.pushState(null, null, location.href);
             <hr style="height:1px;border-width:0;color:#353535;background-color:#353535;">
             <br>
             <label class="label1" for="materialinkg">Materijal (kg):</label>
-            <input class="input" id="materialinkg" maxlength="5" inputmode="numeric" style="width:44px" min="0" />
+            <input class="input" id="materialinkg" maxlength="5" inputmode="numeric" style="width:44px" min="0" oninput="validity.valid||(value='');"/>
             <br>
             <br>
 
             <label class="label2" for="colorper">Boja (%):</label>
-            <input class="input" id="colorper" maxlength="5" inputmode="numeric" style="width:44px" min="0" />
+            <input class="input" id="colorper" maxlength="5" inputmode="numeric" style="width:44px" min="0" oninput="validity.valid||(value='');"/>
             <br>
             <br>
 
