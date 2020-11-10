@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>CPlus</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <script>
+   history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };
+  </script>
+</head>
+
+<body>
+
+
+        <div id="openModalS" class="modalDialogS">
+        <div>
+            <a href="#closeS" title="Close" class="closeS">X</a>
+            <h2><img  class="img-modalS" src="resources/cplus_inverted.png" height="42" width="42"> CPlus</h2>
+            <hr style="height:1px;border-width:0;color:#353535;background-color:#353535;">
+            <p>Aplikacija za ra&#269unanje masenog udjela boje (g) i procentualnog udjela iste (%).</p>
+            <hr style="height:1px;border-width:0;color:#353535;background-color:#353535;">
+            <p style="line-height:0%;margin-top:26px;">Autor: Haris &#352estan</p>
+            <!-- <p>Verzija: 25.11.18</p> -->
+            <p>Verzija: 10.11.20</p>
+        </div>
+    </div>
+        <div class="navbar"></div>
+        <br>
+
+
+            <h1><img class="img-main" src="resources/cplus_inverted.png" height="42" width="42">CPlus</h1>
+            <hr style="height:2px;border-width:0;color:#353535;background-color:#353535;width:260px;">
+            <br>
+            <label class="label7" for="mkgbriz">Masa brizganja (kg):</label>
+            <input class="input" id="mkgbriz" maxlength="7" inputmode="numeric" style="width:60px" min="0" oninput="validity.valid||(value='');"/>
+            <br>
+            <br>
+
+            <label class="label8" for="mkgboje">Masa boje (kg):</label>
+            <input class="input" id="mkgboje" maxlength="7" inputmode="numeric" style="width:60px" min="0" max="4950" onkeyup="this.value = minmax(this.value, 0, 4950);" oninput="validity.valid||(value='');"/>
+            <br>
+            <br>
+            <label class="label9" for="ntest">Broj testiranja (max. 20):</label>
+            <input class="input"  id="ntest" maxlength="5" inputmode="numeric" style="width:20px" min="0" oninput="validity.valid||(value='');" onkeyup="this.value = minmax(this.value, 0, 20.00);"/>
+    
+            <br>
+            <br>
+            <label class="label10" for="tper">Tra&#382;eni procenat boje (%):</label>
+            <input class="input" id="tper" maxlength="7" inputmode="numeric" style="width:24px" min="0" max="100" onkeyup="this.value = minmax(this.value, 0, 99.99);" oninput="validity.valid||(value='');"/>
+                   <br>
+            <br>
+
+            <!-- <hr style="height:1px;border-width:0;color:#353535;background-color:#353535;"> -->
+            <button class="style" id="calculatetper" >
+                Izra&#269unaj
+            </button>
+
+            <button class="style" id="clear" onclick="
+    document.getElementById('mkgbriz').value = '';
+    document.getElementById('mkgboje').value = '';
+    document.getElementById('ntest').value = '';
+    document.getElementById('tper').value = '';
+    document.getElementById('tperresult').innerHTML = '';
+    document.getElementById('mkgbojeresult').innerHTML = '';">
+                Obri&#353i
+            </button>
+            <br>
+            <hr style="height:2px;border-width:0;color:#353535;background-color:#353535;width:220px;">
+            <br>
+            <div class="label" id="tperresult"></div>
+            <br>
+            <div class="label" id="mkgbojeresult"></div>
+            <br>
+        </div>
+        <a href="#openModalS"><img src="resources/info_transparent_2.png" heigth="25" width="25" id="info"> </a>
+        <a href="index.html"><img src="resources/color_invert.png" heigth="25" width="25" class="color">
+
+        <a href="index2.html"><img src="resources/crush_invert.png" heigth="25" width="25" class="crush1">
+
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/script2.js" type="text/javascript"></script>
+          <script src="js/script100.js" type="text/javascript"></script>
+          <script src="js/no_character.js" type="text/javascript"></script>
+            <script src="js/space.js" type="text/javascript"></script>
+            <script src="js/script3.js" type="text/javascript"></script>
+
+</body>
+
+</html>

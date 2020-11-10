@@ -18,11 +18,37 @@
     font-weight: 600;
     margin-left:12px;
 }
+.label7 {
+    font: 14px verdana;
+    font-weight: 600;
+}
+.label8 {
+    font: 14px verdana;
+    font-weight: 600;
+    margin-left:38px;
+}
+.label9 {
+    font: 14px verdana;
+    font-weight: 600;
+}
+.label10 {
+    font: 14px verdana;
+    font-weight: 600;
+    margin-left:-12px;
+}
 #colorresult {
     line-height: 100%;
     font: normal normal bold 14px verdana;
 }
 #perresult {
+    line-height: 100%;
+    font: normal normal bold 14px verdana;
+}
+#tperresult {
+    line-height: 100%;
+    font: normal normal bold 14px verdana;
+}
+#mkgbojeresult {
     line-height: 100%;
     font: normal normal bold 14px verdana;
 }
