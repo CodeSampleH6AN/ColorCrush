@@ -8,11 +8,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/style2.css">
     <script>
-   history.pushState(null, document.title, location.href);
-window.addEventListener('popstate', function (event)
-{
-  history.pushState(null, document.title, location.href);
-});
+history.pushState(null, null, window.top.location.pathname + window.top.location.search);
+        window.addEventListener('popstate', (e) => {
+            e.preventDefault();
+            history.pushState(null, null, window.top.location.pathname + window.top.location.search);
+        });
   </script>
 </head>
 
