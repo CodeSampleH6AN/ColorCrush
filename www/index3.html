@@ -48,7 +48,7 @@ history.pushState(null, null, window.top.location.pathname + window.top.location
             <br>
             <br>
             <label class="label9" for="ntest">Broj testiranja (max. 20):</label>
-            <input class="input"  id="ntest" maxlength="2" inputmode="numeric" step="1" style="width:20px" min="0" oninput="validity.valid||(value='');" onkeyup="this.value = minmax(this.value, 0, 20);" onkeydown="if(event.key==='.'){event.preventDefault();}"  oninput="event.target.value = event.target.value.replace(/[^0-9]*/g,'');"/>
+            <input class="input"  id="ntest" maxlength="2" inputmode="numeric" step="1" style="width:20px" min="0" oninput="validity.valid||(value='');" onkeyup="this.value = minmax(this.value, 0, 20);" onkeydown="if(event.key==='.'){event.preventDefault();}" />
     
             <br>
             <br>
