@@ -16,8 +16,10 @@ window.onload = function() {
 
         var tperresult = (100 * (mkgboje / ntest)) / ((mkgbriz - (mkgboje / ntest)));
         var mkgbojeresult = (((mkgbriz - (mkgboje / ntest)) * tper)) / 100;
+        var mkgbojeresultnt = (((mkgbriz - (mkgboje / ntest)) * tper)) / 10;
         document.getElementById('tperresult').innerHTML = "Trenutni procenat boje:&#160;" + tperresult.toFixed(2) + " %";
         document.getElementById('mkgbojeresult').innerHTML = "Tra&#382;ena masa boje:&#160;" + mkgbojeresult.toFixed(6) + " kg";
+        document.getElementById('mkgbojeresultnt').innerHTML = "Tra&#382;ena masa boje na&#160;" + document.getElementById('ntest').value + "&#160;testiranja:&#160;" + mkgbojeresultnt.toFixed(6) + " kg";
 
         if (mkgbriz === "") {
             document.getElementById('tperresult').innerHTML = "Trenutni procenat boje:&#160;" + (mkgbriz - 0) + " %";
@@ -39,6 +41,18 @@ window.onload = function() {
         }
         if (tper === "") {
             document.getElementById('mkgbojeresult').innerHTML = "Tra&#382;ena masa boje:&#160;" + (tper - 0) + " kg";
+        }
+        if (mkgbriz === "") {
+            document.getElementById('mkgbojeresultnt').innerHTML = "Tra&#382;ena masa na&#160;" + (mkgbriz - 0) + "&#160;testiranja:&#160;" + (mkgbriz - 0) + " kg";
+        }
+        if (mkgboje === "") {
+            document.getElementById('mkgbojeresultnt').innerHTML = "Tra&#382;ena masa na&#160;" + (mkgboje - 0) + "&#160;testiranja:&#160;" + (mkgboje - 0) + " kg";
+        }
+        if (tper === "") {
+            document.getElementById('mkgbojeresultnt').innerHTML = "Tra&#382;ena masa na&#160;" + (ntest - 0) + "&#160;testiranja:&#160;" + (tper - 0) + " kg";
+        }
+        if (ntest === "") {
+            document.getElementById('mkgbojeresultnt').innerHTML = "Tra&#382;ena masa na&#160;" + (ntest - 0) + "&#160;testiranja:&#160;" + (ntest - 0) + " kg";
         }
     }
 
