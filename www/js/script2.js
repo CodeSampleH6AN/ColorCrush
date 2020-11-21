@@ -18,15 +18,15 @@ window.onload = function() {
         }
 
 
-        var colorresult = mkg * cper * 10;
+        var colorresult = (mkg * cper * 10) / 1000;
         var millresult = (mper * mkg * cper + mper * 100 * mkg) / (10000 - (mper * 100));
         var perresult = 10000 * mvkg / (mkg * cper + 100 * mkg + 100 * mvkg);
-        document.getElementById('colorresult').innerHTML = "Boja:&#160;" + colorresult.toFixed(0) + " g";
+        document.getElementById('colorresult').innerHTML = "Boja:&#160;" + colorresult.toFixed(3) + " kg";
         document.getElementById('millresult').innerHTML = "Meljava:&#160;" + millresult.toFixed(0) + " kg";
         document.getElementById('perresult').innerHTML = "Meljava:&#160;" + perresult.toFixed(0) + " %";
 
         if (cper === "") {
-            document.getElementById('colorresult').innerHTML = "Boja:&#160;" + (cper - 0) + " %";
+            document.getElementById('colorresult').innerHTML = "Boja:&#160;" + (cper - 0) + " kg";
         }
 
         if (mper === "") {
