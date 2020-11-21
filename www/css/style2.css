@@ -1,22 +1,22 @@
 .label3 {
     font: 14px verdana;
     font-weight: 600;
-    margin-left:4px;
+    margin-left:-4px;
 }
 .label4 {
     font: 14px verdana;
     font-weight: 600;
-    margin-left:12px;
+    margin-left:-22px;
 }
 .label5 {
     font: 14px verdana;
     font-weight: 600;
-    margin-left:36px;
+    margin-left:1px;
 }
 .label6 {
     font: 14px verdana;
     font-weight: 600;
-    margin-left:12px;
+    margin-left:-22px;
 }
 .label7 {
     font: 14px verdana;
@@ -25,7 +25,6 @@
 .label8 {
     font: 14px verdana;
     font-weight: 600;
-    margin-left:38px;
 }
 .label9 {
     font: 14px verdana;
@@ -34,7 +33,6 @@
 .label10 {
     font: 14px verdana;
     font-weight: 600;
-    margin-left:-12px;
 }
 #colorresult {
     line-height: 100%;

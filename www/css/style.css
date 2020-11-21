@@ -54,18 +54,14 @@ h1 {
     left: 44px;
     top: 8px;
 }
-.label {
-   
-}
 .label1 {
     font: 14px verdana;
     font-weight: 600;
-    margin-left:4px;
+    margin-left:-7px;
 }
 .label2 {
     font: 14px verdana;
     font-weight: 600;
-    margin-left:36px;
 }
 .input {
     position: relative;

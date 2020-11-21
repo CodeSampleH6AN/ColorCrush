@@ -10,9 +10,12 @@ window.onload = function() {
         if (materialinkg === "") {
             materialinkg = materialinkg + 25;
         }
-        var resultgr = materialinkg * colorper * 10;
-        document.getElementById('resultgr').innerHTML = "Boja:&#160;" + resultgr.toFixed(0) + " g";
+        var resultgr = (materialinkg * colorper * 10) / 1000;
+        document.getElementById('resultgr').innerHTML = "Boja:&#160;" + resultgr.toFixed(3) + " kg";
 
+        if (colorper === "") {
+            document.getElementById('resultgr').innerHTML = "Boja:&#160;" + (colorper - 0) + " kg";
+        }
     }
 
 
