@@ -45,7 +45,7 @@ history.pushState(null, null, window.top.location.pathname + window.top.location
     <br>
     <label class="label9" for="ntest">Broj testiranja (min. 5/max. 20):</label>
     <input class="input" id="ntest" maxlength="2" inputmode="numeric" step="1" style="width:20px" min="5"
-        oninput="validity.valid||(value='');" onkeyup="this.value = minmax(this.value, 5, 20);"
+        oninput="validity.valid||(value='');" onkeyup="this.value = minmax(this.value,1, 20);"
         onkeydown="if(event.key==='.'){event.preventDefault();}" />
 
     <br>
