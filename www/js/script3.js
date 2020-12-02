@@ -54,6 +54,9 @@ window.onload = function() {
         if (ntest === "") {
             document.getElementById('mkgbojeresultnt').innerHTML = "Tra&#382;ena masa na&#160;" + (ntest - 0) + "&#160;testiranja:&#160;" + (ntest - 0) + " kg";
         }
+        if (ntest === "1") {
+            document.getElementById('mkgbojeresultnt').innerHTML = "Tra&#382;ena masa na&#160;" + (ntest - 0) + "&#160;testiranje:&#160;" + (0) + " kg";
+        }
     }
 
 };

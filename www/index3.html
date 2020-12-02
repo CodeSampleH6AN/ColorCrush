@@ -24,7 +24,7 @@ history.pushState(null, null, window.top.location.pathname + window.top.location
             <a href="#closeS" title="Close" class="closeS">X</a>
             <h2><img class="img-modalS" src="resources/cplus_inverted.png" height="42" width="42"> CPlus</h2>
             <hr style="height:1px;border-width:0;color:#353535;background-color:#353535;">
-            <p>Aplikacija za ra&#269unanje masenog udjela boje (g) i procentualnog udjela iste (%).</p>
+            <p>Aplikacija za ra&#269unanje masenog udjela boje (kg) i procentualnog udjela iste (%).</p>
             <hr style="height:1px;border-width:0;color:#353535;background-color:#353535;">
             <p style="line-height:0%;margin-top:26px;">Autor: Haris &#352estan</p>
             <!-- <p>Verzija: 25.11.18</p> -->
@@ -38,13 +38,13 @@ history.pushState(null, null, window.top.location.pathname + window.top.location
     <h1><img class="img-main" src="resources/cplus_inverted.png" height="42" width="42">CPlus</h1>
     <hr style="height:2px;border-width:0;color:#353535;background-color:#353535;width:330px;">
     <br>
-    <label class="label7" for="mkgbriz">Masa obojenog brizganja (kg):</label>
+    <label class="label7" for="mkgbriz">Masa zabojenog brizganja (kg):</label>
     <input class="input" id="mkgbriz" maxlength="7" inputmode="numeric" style="width:60px" min="0"
         oninput="validity.valid||(value='');" />
     <br>
     <br>
-    <label class="label9" for="ntest">Broj testiranja (min. 5/max. 20):</label>
-    <input class="input" id="ntest" maxlength="2" inputmode="numeric" step="1" style="width:20px" min="5"
+    <label class="label9" for="ntest">Broj testiranja (min. 1/max. 20):</label>
+    <input class="input" id="ntest" maxlength="2" inputmode="numeric" step="1" style="width:20px" min="1"
         oninput="validity.valid||(value='');" onkeyup="this.value = minmax(this.value,1, 20);"
         onkeydown="if(event.key==='.'){event.preventDefault();}" />
 
@@ -57,7 +57,7 @@ history.pushState(null, null, window.top.location.pathname + window.top.location
     <br>
     <br>
     <label class="label10" for="tper">Tra&#382;eni procenat boje (%):</label>
-    <input class="input" id="tper" maxlength="7" inputmode="numeric" style="width:40px" min="0" max="100"
+    <input class="input" id="tper" maxlength="5" inputmode="numeric" style="width:40px" min="0" max="100"
         onkeyup="this.value = minmax(this.value, 0, 99.99);" oninput="validity.valid||(value='');" />
     <br>
     <br>
@@ -73,7 +73,7 @@ history.pushState(null, null, window.top.location.pathname + window.top.location
     document.getElementById('ntest').value = '';
     document.getElementById('tper').value = '';
     document.getElementById('tperresult').innerHTML = '';
-    document.getElementById('mkgbojeresult').innerHTML = ''
+    document.getElementById('mkgbojeresult').innerHTML = '';
     document.getElementById('mkgbojeresultnt').innerHTML = '';">
         Obri&#353i
     </button>
