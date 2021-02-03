@@ -35,7 +35,10 @@ window.onload = function() {
         if (mvkg === "") {
             document.getElementById('perresult').innerHTML = "Meljava:&#160;" + (mper - 0) + " %";
         }
-
+        
+        if (mkg < "1") {
+            document.getElementById('colorresult').innerHTML = "Boja:&#160;" + 0 + " kg";
+        }
 
     }
 

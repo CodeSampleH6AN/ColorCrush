@@ -11,10 +11,18 @@ window.onload = function() {
             materialinkg = materialinkg + 25;
         }
         var resultgr = (materialinkg * colorper * 10) / 1000;
-        document.getElementById('resultgr').innerHTML = "Boja:&#160;" + resultgr.toFixed(3) + " kg";
+        document.getElementById('resultgr').innerHTML = "Boja:&#160;" + resultgr.toFixed(4) + " kg";
 
         if (colorper === "") {
             document.getElementById('resultgr').innerHTML = "Boja:&#160;" + (colorper - 0) + " kg";
+        }
+
+        if (materialinkg < "0.1") {
+            document.getElementById('resultgr').innerHTML = "Boja:&#160;" + resultgr.toFixed(6) + " kg";
+        }
+
+        if (materialinkg < "0.001") {
+            document.getElementById('resultgr').innerHTML = "Boja:&#160;" + resultgr.toFixed(8) + " kg";
         }
     }
 
