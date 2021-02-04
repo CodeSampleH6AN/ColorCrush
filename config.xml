@@ -9,7 +9,7 @@ CodeSampleH6AN
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <engine name="android" spec="~7.1.2" />
+    <engine name="android" spec="~6.3.0" />
     <preference name="orientation" value="portrait" />
 <platform name="android">
 	<icon density="ldpi" src="res/icons/android/drawable-ldpi-icon.png" />
