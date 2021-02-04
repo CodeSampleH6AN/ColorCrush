@@ -1,63 +1,77 @@
 .label3 {
     font: 14px verdana;
     font-weight: 600;
-    margin-left:-4px;
+    margin-left: -4px;
 }
+
 .label4 {
     font: 14px verdana;
     font-weight: 600;
-    margin-left:-22px;
+    margin-left: -22px;
 }
+
 .label5 {
     font: 14px verdana;
     font-weight: 600;
-    margin-left:1px;
+    margin-left: 1px;
 }
+
 .label6 {
     font: 14px verdana;
     font-weight: 600;
-    margin-left:-22px;
+    margin-left: -22px;
 }
+
 .label7 {
     font: 14px verdana;
     font-weight: 600;
 }
+
 .label8 {
     font: 14px verdana;
     font-weight: 600;
 }
+
 .label9 {
     font: 14px verdana;
     font-weight: 600;
 }
+
 .label10 {
     font: 14px verdana;
     font-weight: 600;
 }
+
 #colorresult {
     line-height: 100%;
     font: normal normal bold 14px verdana;
 }
+
 #perresult {
     line-height: 100%;
     font: normal normal bold 14px verdana;
 }
+
 #tperresult {
     line-height: 100%;
     font: normal normal bold 14px verdana;
 }
+
 #mkgbojeresult {
     line-height: 100%;
     font: normal normal bold 14px verdana;
 }
+
 #mkgbojeresultnt {
     line-height: 100%;
     font: normal normal bold 14px verdana;
 }
+
 #millresult {
     line-height: 100%;
     font: normal normal bold 14px verdana;
 }
+
 /* Modal Window */
 
 .img-modalS {
@@ -65,9 +79,11 @@
     top: 8px;
     left: 6px;
 }
+
 h2 {
     font-size: 2em;
 }
+
 .modalDialogS {
     position: fixed;
     top: 0;
@@ -80,12 +96,14 @@ h2 {
     transition: opacity 400ms ease-in;
     pointer-events: none;
 }
+
 .modalDialogS:target {
     opacity: 1;
     color: #353535;
     pointer-events: auto;
 }
-.modalDialogS > div {
+
+.modalDialogS>div {
     color: #353535;
     width: 320px;
     position: relative;
@@ -93,6 +111,7 @@ h2 {
     padding: 5px 20px 13px 20px;
     background: #fed25a;
 }
+
 .closeS {
     background: #fed25a;
     color: #353535;
@@ -111,37 +130,42 @@ h2 {
 /* Media Queries */
 
 @media screen and (orientation: portrait) {
-    .modalDialogS > div {
+    .modalDialogS>div {
         width: 234px;
         position: relative;
         margin: 28% auto;
         background: #fed25a;
     }
-  .img-modalS {
-    position: relative;
-    top: 8px;
-    left: 4px;
+
+    .img-modalS {
+        position: relative;
+        top: 8px;
+        left: 4px;
+    }
+
+    .img-modalS-mass {
+        position: relative;
+        top: 8px;
+        left: 10px;
+    }
 }
-.img-modalS-mass {
-    position: relative;
-    top: 8px;
-    left: 10px;
-}
-}
+
 @media screen and (orientation: landscape) {
-    .modalDialogS > div {
+    .modalDialogS>div {
         position: relative;
         margin: 10% auto;
         background: #fed25a;
     }
-  .img-modalS {
-    position: relative;
-    top: 8px;
-    left: 4px;
-}
-.img-modalS-mass {
-    position: relative;
-    top: 8px;
-    left: 10px;
-}
+
+    .img-modalS {
+        position: relative;
+        top: 8px;
+        left: 4px;
+    }
+
+    .img-modalS-mass {
+        position: relative;
+        top: 8px;
+        left: 10px;
+    }
 }

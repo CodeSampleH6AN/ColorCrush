@@ -1,4 +1,7 @@
 $('html').bind('keypress', function (e) {
+    if (e.charCode == 32) {
+        return false;
+    }
     if (e.charCode == 43) {
         return false;
     }
@@ -8,7 +11,10 @@ $('html').bind('keypress', function (e) {
     if (e.charCode == 45) {
         return false;
     }
-    if (e.charCode == 32) {
+    if (e.charCode == 108) {
+        return false;
+    }
+    if (e.charCode == 110) {
         return false;
     }
     if (e.charCode == 173) {
@@ -18,6 +24,9 @@ $('html').bind('keypress', function (e) {
         return false;
     }
     if (e.charCode == 189) {
+        return false;
+    }
+    if (e.charCode == 190) {
         return false;
     }
 });

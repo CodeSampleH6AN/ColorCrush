@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
 
     document.getElementById('calculateit').addEventListener('click', calcNew);
 
@@ -28,4 +28,3 @@ window.onload = function() {
 
 
 };
-

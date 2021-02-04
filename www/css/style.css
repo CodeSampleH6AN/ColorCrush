@@ -1,4 +1,3 @@
-
 body {
     color: #353535;
     font-family: verdana;
@@ -6,9 +5,13 @@ body {
     text-align: center;
     user-select: none;
     overflow: hidden;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-a {-webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .navbar {
     overflow: hidden;
     background-color: #353535;
@@ -19,50 +22,59 @@ a {-webkit-tap-highlight-color: rgba(0,0,0,0);}
     width: 100%;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
 }
+
 h1 {
-  margin-left:4px;
+    margin-left: 4px;
 }
 
 .img-main {
     position: relative;
     top: 8px;
     margin-right: 6px;
-    visibility:visible;
+    visibility: visible;
 }
+
 #info {
     position: absolute;
     right: 10px;
     top: 8px;
 }
+
 .color {
     position: absolute;
     left: 10px;
     top: 8px;
 }
+
 .crush {
     position: absolute;
     left: 10px;
     top: 8px;
 }
+
 .crush1 {
     position: absolute;
     left: 44px;
     top: 8px;
 }
+
 .cplus {
     position: absolute;
     left: 44px;
     top: 8px;
 }
+
 .label1 {
     font: 14px verdana;
     font-weight: 600;
-    margin-left:-7px;
+    margin-left: -7px;
 }
+
 .label2 {
     font: 14px verdana;
     font-weight: 600;
 }
+
 .input {
     position: relative;
     top: 0;
@@ -73,9 +85,10 @@ h1 {
     text-transform: uppercase;
     outline: none;
     background: #fed25a;
-    border:none;
-    border-bottom:1px solid #353535;
+    border: none;
+    border-bottom: 1px solid #353535;
 }
+
 .style {
     position: relative;
     top: 0;
@@ -88,10 +101,12 @@ h1 {
     outline: none;
     background: #fed25a;
 }
+
 #resultgr {
     line-height: 100%;
     font: normal normal bold 14px verdana;
 }
+
 /* Modal Window */
 
 .img-modal {
@@ -99,9 +114,11 @@ h1 {
     top: 8px;
     left: 6px;
 }
+
 h2 {
     font-size: 2em;
 }
+
 .modalDialog {
     position: fixed;
     top: 0;
@@ -114,12 +131,14 @@ h2 {
     transition: opacity 400ms ease-in;
     pointer-events: none;
 }
+
 .modalDialog:target {
     opacity: 1;
     color: #353535;
     pointer-events: auto;
 }
-.modalDialog > div {
+
+.modalDialog>div {
     color: #353535;
     width: 320px;
     position: relative;
@@ -127,6 +146,7 @@ h2 {
     padding: 5px 20px 13px 20px;
     background: #fed25a;
 }
+
 .close {
     background: #fed25a;
     color: #353535;
@@ -145,27 +165,30 @@ h2 {
 /* Media Queries */
 
 @media screen and (orientation: portrait) {
-    .modalDialog > div {
+    .modalDialog>div {
         width: 234px;
         position: relative;
         margin: 28% auto;
         background: #fed25a;
     }
-  .img-modal {
-    position: relative;
-    top: 8px;
-    left: 4px;
+
+    .img-modal {
+        position: relative;
+        top: 8px;
+        left: 4px;
+    }
 }
-}
+
 @media screen and (orientation: landscape) {
-    .modalDialog > div {
+    .modalDialog>div {
         position: relative;
         margin: 10% auto;
         background: #fed25a;
     }
-  .img-modal {
-    position: relative;
-    top: 8px;
-    left: 4px;
-}
+
+    .img-modal {
+        position: relative;
+        top: 8px;
+        left: 4px;
+    }
 }
